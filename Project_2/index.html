@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+
+    <title>Bootstrap Learning</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+                <!-- medium link: https://asishraz.medium.com/ -->
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link disabled"
+                  href="#"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Disabled</a
+                >
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="demo" class="carousel slide" data-ride="carousel">
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+        </ul>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img
+              src="images/cycle.jpg"
+              alt="Los Angeles"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption">
+              <h3>Los Angeles</h3>
+              <p>We had such a great time in LA!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/cyclist.jpg"
+              alt="Chicago"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption">
+              <h3>Chicago</h3>
+              <p>Thank you, Chicago!</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/asish_II.jpg"
+              alt="New York"
+              width="1100"
+              height="500"
+            />
+            <div class="carousel-caption">
+              <h3>New York</h3>
+              <p>We love the Big Apple!</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+    </header>
+    <!-- About Section -->
+    <section>
+      <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">about Us</h1>
+        <hr class="w-25 mx-auto pt-5" />
+
+        <div class="row mb-5">
+          <div class="col-lg-6 col-md-6 col-12">
+            <img src="images/asish.jpg" alt="" class="img-fluid" />
+          </div>
+
+          <div class="col-lg-6 col-md-6 col-12">
+            <h1>Who Am I?</h1>
+            <hr />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              qui sit harum nesciunt totam, ex eos atque iure sapiente
+              architecto soluta quidem fuga optio cupiditate expedita,
+              recusandae quis enim beatae. Illum cum veniam iste laboriosam
+              velit officia recusandae at dolorum facere voluptatibus quisquam
+              eius tempore libero repellendus id a aliquid reiciendis nihil,
+              voluptatem nemo? Numquam quod similique nobis exercitationem sit!
+              Ipsam id nesciunt corrupti quasi eaque, pariatur, nam tempora
+              optio veniam magni sit iusto quibusdam sed eum labore mollitia
+              atque cum vitae, dolores hic? Soluta quod dolorem natus in sit.
+              Hic ratione animi ullam rem nihil dolore dolorum qui voluptates
+              dolor in ad ipsum minima exercitationem mollitia delectus
+              consequuntur consequatur voluptate vel, omnis nisi? Atque sapiente
+              deserunt quidem id in. Blanditiis vel ullam sit doloribus!
+              Inventore assumenda esse, possimus vel mollitia placeat quaerat
+              libero eligendi facilis perspiciatis! Id, rerum enim. Accusamus
+              fugiat iste provident error non vel, distinctio minima adipisci?
+            </p>
+            <button class="btn bg-primary text-white">
+              Let's Meet Virtually?
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Serivce section -->
+<section>
+    <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">Service</h1>
+        <hr class="w-25 mx-auto pt-5" />
+
+        
+
+
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/football.jfif" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/football.jfif" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>            
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-12 mb-5">
+            <div class="card" style="width:400px">
+                <img class="card-img-top" src="images/football.jfif" alt="Card image">
+                <div class="card-body">
+                  <h4 class="card-title">John Doe</h4>
+                  <p class="card-text">Some example text.</p>
+                  <a href="#" class="btn btn-primary">See Profile</a>
+                </div>
+            </div>            
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- Calling Section -->
+<section class="bg-primary">
+    <article class="py-5 text-center text-white">
+        <div>
+            <h3 class="display-4 text-white">Call 100</h3>
+            <p> Call at your own risk</p>
+            <button class="btn btn-warning">Call Now</button>
+        </div>
+    </article>
+</section>
+
+
+
+<!-- Gallery section -->
+<section>
+    <div class="container-fluid">
+        <h1 class="text-center text-capitalize pt-5">Gallery</h1>
+        <hr class="w-25 mx-auto pt-5" />
+    <div class="row">
+        <div class="col-lg-4 col-md-2 col-12 mb-5">
+            <img src="images/asish.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-2 col-12 mb-5">
+            <img src="images/asish.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-2 col-12 mb-5">
+            <img src="images/asish.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-2 col-12 mb-5">
+            <img src="images/asish.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-2 col-12 mb-5">
+            <img src="images/asish.jpg" alt="" class="img-fluid">
+        </div>
+
+        <div class="col-lg-4 col-md-2 col-12 mb-5">
+            <img src="images/asish.jpg" alt="" class="img-fluid">
+        </div>
+
+    </div>
+    
+
+</section>
+
+<!-- Register section -->
+
+
+<section class="bg-primary">
+    <article class="py-5">
+        <div class="text-center text-white ">
+            <h3 class="display-4 text-white">Want to Join the Team</h3>
+            <p>Be the part of the CHANGEk</p>
+            <button class="btn btn-warning" data-toggle="modal" data-target="#myModal">Join Now</button>
+        </div>
+        <div class="modal fade" id="myModal">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content">
+              
+                <!-- Modal Header -->
+                <div class="modal-header">
+                  <h4 class="modal-title">Sign Up</h4>
+                  <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form action="/action_page.php">
+                        <div class="form-group">
+                          <label for="email">Email address:</label>
+                          <input type="email" class="form-control" placeholder="Enter email" id="email">
+                        </div>
+                        <div class="form-group">
+                          <label for="pwd">Password:</label>
+                          <input type="password" class="form-control" placeholder="Enter password" id="pwd">
+                        </div>
+                        <div class="form-group form-check">
+                          <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                          </label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                      </form>
+                </div>
+                
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+          
+        </div>
+    </article>
+
+</section>
+
+
+<!-- Contact us section -->
+
+<section>
+    <div class="container">
+        <h1 class="text-center text-capitalize pt-5 mb-5">Contact Us</h1>
+        <hr class="w-25 mx-auto pt-5">        
+        <div class="w-50 mx-auto">
+                <form action="/action_page.php">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="name" class="form-control" placeholder="Enter your full name" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" class="form-control" placeholder="Enter your correct email" id="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="number">Your Number:</label>
+                        <input type="number" class="form-control" placeholder="Enter your phone number" id="number">
+                    </div>
+
+                    <div class="form-group ">
+                        <label>Your Message:</label>
+                            <textarea class="form-control" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="form-group form-check">
+                        <label class="form-check-label">
+                            <input class="form-check-input" type="checkbox"> Remember me
+                        </label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+        </div>
+    </div>
+</section>
+
+
+<footer class="text-center bg-dark text-white">
+    <p>@copyright GareebCODER.com</p> 
+</footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
