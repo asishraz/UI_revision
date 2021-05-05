@@ -1,0 +1,35 @@
+body {
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin-top: 5px;
+}
+
+.btn-list {
+  cursor: pointer;
+  padding: 20px 20px;
+  position: relative;
+  top: 50%;
+}
+#first,
+#second,
+#third,
+#forth,
+#fifth {
+  display: none;
+}
+
+.image-content {
+  justify-content: center;
+  text-align: center;
+  /* background-color: rebeccapurple; */
+}
+
+#first {
+  /* position: absolute; */
+  /* width: 500px; */
+}
