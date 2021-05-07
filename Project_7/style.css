@@ -1,0 +1,73 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Girassol", cursive;
+  /* font-weight: 700; */
+  background: black;
+}
+
+.animated-text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgb(28, 26, 138);
+  padding: 0 40px;
+  height: 60px;
+  overflow: hidden;
+  width: 50%;
+}
+
+.line {
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  line-height: 60px;
+}
+
+.line:first-child {
+  animation: anim 10s ease;
+}
+
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+
+  10% {
+    margin-top: -60px;
+  }
+
+  20% {
+    margin-top: -120px;
+  }
+
+  35% {
+    margin-top: -180px;
+  }
+
+  50% {
+    margin-top: -240px;
+  }
+
+  65% {
+    margin-top: -300px;
+  }
+
+  75% {
+    margin-top: -360px;
+  }
+
+  85% {
+    margin-top: -420px;
+  }
+
+  95% {
+    margin-top: -480px;
+  }
+
+  100% {
+    margin-top: -540px;
+  }
+}
