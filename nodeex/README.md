@@ -44,3 +44,80 @@
   <li> Used in creating Web-Services</li>
   
 </ul>
+
+<hr>
+
+<ul> <code> Few key points on NodeJS </code>
+  <li> It is not a language</li>
+  <li> JS runs easily on it</li>
+  <li> With the help of it, now JS can be used in back-end, front-end and in database as well</li>
+  <li> NodeJS used as a backend server </li>
+  
+</ul>
+<hr>
+
+# III. How NodeJS works ?
+
+<dl>
+  <dt>Let's say a client request "Cricket Live Score" to the server </dt>
+  <dt> Now the server can do the three things: </dt>
+  <dd> 1. Pass that request to the new server</dd>
+  <dd> 2. Pass that request to the database <dd>
+  <dd> 3. Pass that request to the file system </dd>
+  
+  <dt> In case of passing the request to another server, it might take some time to get the response(let's say 2 seconds)</dt>
+  <dt> For 1 client, it will take 2 seconds and in case of 5 clients, the 5th client will get the response in the 10th second.</dt>
+  <dt> <code> There should be multiple request handling system </code> </dt>
+ 
+
+</dl>
+<br>
+<div>
+  <code> Java uses Tomcat server for handling multiple request through multiple thread concept. </code>
+  <h3> We all know, JS doesn't support Multiple Thread </h3>
+  <code> And also, NodeJS have only single thread </code>
+</div>
+<br>
+
+<div>
+  <h2> IV. Question arises here, how NodeJS handles multiple clients/requests?  </h2> 
+  <dl> NodeJS is a single threaded application and can only accept requests </dl>
+  <dt> It works on 2 ways: </dt>
+  <dd> a. Non-blocking I/O </dd>
+  <dd> b. Asynchronous </dd>
+  
+</div>
+
+
+<div>
+  <h2> V. How Does Non-Blocking I/O works ? </h2> 
+  <dl> Client <code> C1 </code> request to the NodeJS web-server </dl>
+  <dl> The single thread <code> T </code> will send that requests to the workers which works for the NodeJS server </dl>
+  <dl> Now this thread <code> T </code> will not be blocked for <code> C1 </code>  and accessible to other clients as well </dl>
+  <dl> Same like <code>C1 </code>, another client <code> C2 </code> request to Thread <code>T</code> and the same thing will happen </dl>
+  <dl> This thread <code> T </code> will send that request to another worker </dl>
+  <dl> And will not be blocked for the client <code> C2  </code>   and will be accessible to other clients as well </dl>
+  
+</div>
+
+``` 
+This is the way Non-blocking I/O works by not blocking itself for 1 client/request 
+
+```
+<hr>
+<code> This is the simple example of client/server request/response. </code>
+
+<div> 
+  <h2> VI. What happens, in case of Intense Work(like, huge calculation) ? </h2>
+  - NodeJS works fine in I/O Intensive work and not in CPU Intensive work 
+</div>
+<hr>
+
+<div>
+  <h2> VI. If NodeJS doesn't support multiple threads, then how this workers are created? [<i>What are they, if not multiple thread?</i>] </h2>
+  <dl> <code> Libuv </code> is a special library build for NodeJS </dl>
+  <dt> It provides the concept of Non-Blocking I/o </dt>
+  <dt> It build in C-lang which uses System Kernel which has Multiple Thread </dt>
+  <dl> And these workers are nothing but Threads </dl>
+
+</div>
