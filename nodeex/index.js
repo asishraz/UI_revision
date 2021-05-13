@@ -1,5 +1,6 @@
-var a = 1;
-var b = 2;
-var c = a+b;
+var xyz = require('http')
 
-console.log('The output is: ' + c);
+xyz.createServer(function(req,res) {
+    res.write("naveen reddy")
+    res.end()
+}).listen(3000)
