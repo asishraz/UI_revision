@@ -22,7 +22,7 @@
 
 <ul> Now the question arises, how NODEJS came into picture ? 
   <br>
-  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/backend_frontend.JPG">
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/both_domain.JPG">
   
   <li> JS was getting used wisely in browser, desktop, phone and on web-server. </li>
   <br>
@@ -35,19 +35,12 @@
 
 <hr>
 
-<ul> Node JS
-  <li> At first, it is a runt-time environment </li>
-  <li> Simple JS code runs here</li>
-  <li> It can create web-application</li>
-  <li> Used in creating Web-Services</li>
-  
-</ul>
+<h1> Node JS </h1>
+<img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/nodejs.JPG">
 
 <hr>
 
 <ul> <code> Few key points on NodeJS </code>
-  <li> It is not a language</li>
-  <li> JS runs easily on it</li>
   <li> With the help of it, now JS can be used in back-end, front-end and in database as well</li>
   <li> NodeJS used as a backend server </li>
   
@@ -57,6 +50,7 @@
 # III. How NodeJS works ?
 
 <dl>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/client_request.JPG">
   <dt>Let's say a client request "Cricket Live Score" to the server </dt>
   <dt> Now the server can do the three things: </dt>
   <dd> 1. Pass that request to the new server</dd>
@@ -64,6 +58,9 @@
   <dd> 3. Pass that request to the file system </dd>
   
   <dt> In case of passing the request to another server, it might take some time to get the response(let's say 2 seconds)</dt>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/multiple_client.JPG">
+  <br>
   <dt> For 1 client, it will take 2 seconds and in case of 5 clients, the 5th client will get the response in the 10th second.</dt>
   <dt> <code> There should be multiple request handling system </code> </dt>
  
@@ -72,6 +69,9 @@
 <br>
 <div>
   <code> Java uses Tomcat server for handling multiple request through multiple thread concept. </code>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/java.JPG">
+  <br>
   <h3> We all know, JS doesn't support Multiple Thread </h3>
   <code> And also, NodeJS have only single thread </code>
 </div>
