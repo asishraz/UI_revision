@@ -27,5 +27,20 @@
   <li> And in front-end: HTML, CSS and JS</li>
   <li> And we needed to know both the domains for the execution </li>
   <li> JS was getting used wisely in browser, desktop, phone and on web-server. </li>
+  <br>
+  
+  <code> Now to run the JS on the machine, there was a requirement of Runtime-Environment </code> 
 
+</ul>
+
+# and that's where NodeJS gets created 🔥🔥🙌🙌
+
+<hr>
+
+<ul> Node JS
+  <li> At first, it is a runt-time environment </li>
+  <li> Simple JS code runs here</li>
+  <li> It can create web-application</li>
+  <li> Used in creating Web-Services</li>
+  
 </ul>
