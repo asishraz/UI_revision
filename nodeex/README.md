@@ -21,9 +21,9 @@
 
 
 <ul> Now the question arises, how NODEJS came into picture ? 
-  <li> Earlier, in backend there were PHP, Java, ASP  </li>
-  <li> And in front-end: HTML, CSS and JS</li>
-  <li> And we needed to know both the domains for the execution </li>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/backend_frontend.JPG">
+  
   <li> JS was getting used wisely in browser, desktop, phone and on web-server. </li>
   <br>
   
