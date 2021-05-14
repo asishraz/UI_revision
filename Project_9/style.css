@@ -36,3 +36,15 @@
     border-radius: 50%;
     border: 15px solid grey;
 }
+
+.red-circle {
+    top: 33%;
+    left: 49%;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background: red;
+    /* transform: translateX(-50%); */
+    border-radius: 50%;
+
+}
