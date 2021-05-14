@@ -79,10 +79,8 @@
 
 <div>
   <h2> IV. Question arises here, how NodeJS handles multiple clients/requests?  </h2> 
-  <dl> NodeJS is a single threaded application and can only accept requests </dl>
-  <dt> It works on 2 ways: </dt>
-  <dd> a. Non-blocking I/O </dd>
-  <dd> b. Asynchronous </dd>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/nodejs_2ways.JPG">
   
 </div>
 
@@ -90,11 +88,16 @@
 <div>
   <h2> V. How Does Non-Blocking I/O works ? </h2> 
   <dl> Client <code> C1 </code> request to the NodeJS web-server </dl>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/nonblocking_first.JPG">
+  <br>
   <dl> The single thread <code> T </code> will send that requests to the workers which works for the NodeJS server </dl>
   <dl> Now this thread <code> T </code> will not be blocked for <code> C1 </code>  and accessible to other clients as well </dl>
   <dl> Same like <code>C1 </code>, another client <code> C2 </code> request to Thread <code>T</code> and the same thing will happen </dl>
   <dl> This thread <code> T </code> will send that request to another worker </dl>
   <dl> And will not be blocked for the client <code> C2  </code>   and will be accessible to other clients as well </dl>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/nonblocking_second.JPG">
   
 </div>
 
@@ -114,8 +117,9 @@ This is the way Non-blocking I/O works by not blocking itself for 1 client/reque
 <div>
   <h2> VI. If NodeJS doesn't support multiple threads, then how this workers are created? [<i>What are they, if not multiple thread?</i>] </h2>
   <dl> <code> Libuv </code> is a special library build for NodeJS </dl>
-  <dt> It provides the concept of Non-Blocking I/o </dt>
-  <dt> It build in C-lang which uses System Kernel which has Multiple Thread </dt>
+  <br>
+  <img src="https://raw.githubusercontent.com/asishraz/UI_revision/master/nodeex/libuv.JPG">
+  <hr>
   <dl> And these workers are nothing but Threads </dl>
 
 </div>
