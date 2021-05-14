@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="eyes">
+        <div class="eye">
+            <div class="balls">
+
+            </div>
+        </div>
+
+        <div class="eye">
+            <div class="balls">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var balls = document.getElementsByClassName("balls");
+        document.onmousemove(function () {
+            var x = event.clientX * 100 / window.innerWidth + '%';
+            var y = event.clientY * 100 / window.innerHeight + '%';
+            // event.clientX = gets the horizontal coordinate of the mouse
+            // event.clientY = gets the vertical coordinate of the mouse
+            // window.innerWidth = gets the browser width
+            // windo.innerHeight = gets the browser height
+        })
+    </script>
+
+</body>
+
+</html>
